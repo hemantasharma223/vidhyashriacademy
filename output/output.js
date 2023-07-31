@@ -51,21 +51,23 @@ img.onload = function() {
     ctx.fillStyle = 'black'; // Set the text color
     ctx.fillText(nameOfStudent, 75, 260); // Replace 'Your Text Here' with your actual text and position (x, y)
     
-    ctx.fillText('Monthely Fee', 80, 415);
-    ctx.fillText('4200', 525, 415); 
+    ctx.fillText('Monthely Fee', 80, 415); //monthely fee placement in particulars
+    ctx.fillText('4200', 525, 415); // amount placement in amount sectors
 
-    ctx.fillText('Lunch Fee', 80, 450);
-    ctx.fillText('1500', 525, 450); 
+    ctx.fillText('Lunch Fee', 80, 450);//lunch fee placement in particulars
+    ctx.fillText('1500', 525, 450); // amount placement in amount sectors
 
-    ctx.fillText('Transportation Fee', 80, 485);
-    ctx.fillText('  300', 525, 485); 
+    ctx.fillText('Transportation Fee', 80, 485);//transportation fee placement in particulars
+    ctx.fillText('  300', 525, 485); // amount placement in amount sectors
+
+    ctx.fillText('  300', 525, 685); // total amount placement in amount sectors
 
 
-    ctx.fillText(`${monthNames[month]}`, 310, 312);
-    ctx.fillText(`${year}`, 525, 312);
+    ctx.fillText(`${monthNames[month]}`, 310, 312); // month placement
+    ctx.fillText(`${year}`, 525, 312); //year placement
 
     ctx.font = '18px Arial';
-    ctx.fillText(`${date}/${monthNames[month]}/${year}`, 480, 740);
+    ctx.fillText(`${date}/${monthNames[month]}/${year}`, 480, 740); // printed date placement
 };
 
 
