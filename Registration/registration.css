@@ -1,0 +1,106 @@
+body{
+    background-color: #f5f5f5f5;
+}
+#headings {
+    text-align: center;
+    background-color: #f9f6f7;
+    border: 1px solid black;
+}
+td{
+    font-size: larger;
+    font-weight: bold;
+    padding: 5px;
+    
+}
+input,select {
+    height: 5vh;
+    width: 50%;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: 8vh;
+    text-align: center;
+    font-size: larger;
+    border: solid 2px black;
+    border-radius: 5px;
+}
+#button {
+    margin-left: 20px;
+    text-align: center;
+}
+#submit {
+    height: 40px;
+    width: 90px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: darkgreen;
+    color: aquamarine;
+    text-align: center;
+}
+#reset {
+    height: 40px;
+    width: 80px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: darkred;
+    color: aquamarine;
+}
+img {
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+    padding-right: 5vh;
+}
+#register{
+    border: 1px solid black;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#generate {
+    height: 40px;
+    width: 100px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #800000;
+    text-align: center;
+}
+
+nav {
+    background-color: #800000;
+    color: #fff;
+    position: relative;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav li {
+    padding: 10px 20px;
+  }
+  nav li:hover{
+    background-color: #818181;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #content {
+    height: auto; /* Add some height to create scrollable content */
+  }
+  
+  .fixed-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
