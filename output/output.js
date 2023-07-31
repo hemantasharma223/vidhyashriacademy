@@ -1,4 +1,4 @@
-window.addEventListener("scroll", function () {
+window.addEventListener("scroll", function() {
     const navbar = document.getElementById("navbar");
     const content = document.getElementById("content");
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -8,7 +8,7 @@ window.addEventListener("scroll", function () {
     } else {
         navbar.classList.remove("fixed-nav");
     }
-    });
+});
 
 
 
@@ -26,8 +26,10 @@ const year = currentDate.getFullYear();
 const monthNames = [
     "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"
-  ];
+];
 
+
+let monthelyFee = 4200 - (4200 * monthelyFeeDiscount / 100);
 
 
 // Get the canvas element from the DOM
@@ -51,8 +53,10 @@ img.onload = function() {
     ctx.fillStyle = 'black'; // Set the text color
     ctx.fillText(nameOfStudent, 75, 260); // Replace 'Your Text Here' with your actual text and position (x, y)
     
+    ctx.fillText(grade, 75, 312);
+
     ctx.fillText('Monthely Fee', 80, 415); //monthely fee placement in particulars
-    ctx.fillText('4200', 525, 415); // amount placement in amount sectors
+    ctx.fillText(monthelyFee, 525, 415); // amount placement in amount sectors
 
     ctx.fillText('Lunch Fee', 80, 450);//lunch fee placement in particulars
     ctx.fillText('1500', 525, 450); // amount placement in amount sectors
@@ -91,21 +95,7 @@ document.getElementById('grade').textContent = "Grade:- " + grade;
 document.getElementById('year').textContent = `Year:- ${year}`;
 document.getElementById('month').textContent = `Month:- ${monthNames[month]}`;
 
-if (grade == 'Nursery'){
-    let monthelyFee = 1950 + (1950 * monthelyFeeDiscount / 100);
-    document.getElementById('mnthlyFee').textContent = monthelyFee;
 
-    let transFee = 300 + (300 * transFeeDiscount / 100);
-    document.getElementById('transportationFee').textContent = transFee;
-
-    let totalLunchFee = 1200 + (1200 * lunchFeeDiscount /100);
-    document.getElementById('lunchFee').textContent = totalLunchFee;
-
-
-    let totalAmnt = monthelyFee + transFee + totalLunchFee;
-    document.getElementById('totalAmount').textContent = "Total Amount:-" + totalAmnt;
-
-}
 
 if (grade == 'L.K.G'){
     let monthelyFee = 2050 + (2050 * monthelyFeeDiscount / 100);
