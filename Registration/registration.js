@@ -1,3 +1,12 @@
+// const express = require('express');
+// const app = express();
+// app.use(express.urlencoded());
+// app.get('/', function(request, renspose, next)){
+//     respond.send(`
+    
+//     `)
+// }
+
 window.addEventListener("scroll", function () {
 const navbar = document.getElementById("navbar");
 const content = document.getElementById("content");

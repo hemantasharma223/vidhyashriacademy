@@ -112,3 +112,25 @@ nav a {
   top: 0;
   width: 100%;
 }
+
+@media (max-width: 600px) {
+/* Adjust styles for mobile devices here */
+.navBar {
+  position: relative;
+  margin-bottom: 20px;
+  width: 72dvh;
+    text-align: center; /* Center-align the navigation links */
+}
+
+.navBar ul {
+    padding: 0; /* Remove default padding */
+    list-style: none; /* Remove list bullets */
+}
+
+.billpad {
+  margin-top: 0px;
+    padding: 10px; /* Add padding for better spacing */
+}
+
+/* Adjust other styles as needed */
+}
